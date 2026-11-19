@@ -1,0 +1,115 @@
+name: Finance model workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Execution action"
+        required: true
+        type: choice
+        default: predict
+        options:
+          - download
+          - train
+          - predict
+          - simulate
+          - all
+      config:
+        description: "Model-set directory"
+        required: true
+        default: "model_sets/default"
+      start:
+        description: "Download start date (for example 2026-04-01)"
+        required: false
+        default: ""
+      symbol:
+        description: "Prediction symbol or all"
+        required: false
+        default: "all"
+      prediction_time:
+        description: "Prediction reference"
+        required: false
+        default: "latest"
+      scope:
+        description: "Model scope"
+        required: true
+        type: choice
+        default: both
+        options:
+          - common
+          - individual
+          - both
+      overwrite:
+        description: "Overwrite existing trained models"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: Download data
+        if: inputs.action == 'download' || inputs.action == 'all'
+        run: |
+          if [ -n "${{ inputs.start }}" ]; then
+            python download_yfinance.py --config "${{ inputs.config }}" --start "${{ inputs.start }}"
+          else
+            python download_yfinance.py --config "${{ inputs.config }}"
+          fi
+
+      - name: Train models
+        if: inputs.action == 'train' || inputs.action == 'all'
+        run: |
+          if [ "${{ inputs.overwrite }}" = "true" ]; then
+            python run_model_set.py train --config "${{ inputs.config }}" --scope "${{ inputs.scope }}" --overwrite
+          else
+            python run_model_set.py train --config "${{ inputs.config }}" --scope "${{ inputs.scope }}"
+          fi
+
+      - name: Predict
+        if: inputs.action == 'predict' || inputs.action == 'all'
+        run: |
+          python run_model_set.py predict \
+            --config "${{ inputs.config }}" \
+            --symbol "${{ inputs.symbol }}" \
+            --prediction-time "${{ inputs.prediction_time }}" \
+            --scope "${{ inputs.scope }}"
+
+      - name: Simulate trades
+        if: inputs.action == 'simulate' || inputs.action == 'all'
+        run: |
+          python run_model_set.py simulate \
+            --config "${{ inputs.config }}" \
+            --scope "${{ inputs.scope }}"
+
+      - name: Upload finance results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: finance-results-${{ github.run_id }}
+          path: |
+            model_sets/**/data/*.csv
+            model_sets/**/models/*.joblib
+            model_sets/**/evaluation.json
+            model_sets/**/evaluation.csv
+            model_sets/**/predictions/*.json
+            model_sets/**/equity.csv
+          if-no-files-found: warn
+          retention-days: 30

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import argparse
+import json
+import time
 from pathlib import Path
 
 import yfinance as yf
@@ -43,8 +45,26 @@ def main() -> None:
     parser.add_argument("--config", help="Model-set directory or path to model_set.json")
     parser.add_argument("--start", help="Data start date/time, e.g. 2026-04-01")
     args = parser.parse_args()
-    config, set_dir = load_config(args.config or prompt_config_path())
-    start = args.start if args.start is not None else prompt_start()
+    if args.config:
+        while True:
+            try:
+                config, set_dir = load_config(args.config)
+                break
+            except (FileNotFoundError, ValueError, json.JSONDecodeError) as error:
+                print(f"Invalid --config value: {error}")
+                args.config = prompt_config_path()
+    else:
+        config, set_dir = load_config(prompt_config_path())
+    if args.start is not None:
+        while True:
+            try:
+                start = validate_start(args.start)
+                break
+            except ValueError as error:
+                print(f"Invalid --start value: {error}")
+                args.start = prompt_start()
+    else:
+        start = prompt_start()
     interval = config["data"]["interval"]
     bars = int(config["data"]["bars"])
     if bars <= 0:
@@ -62,9 +82,24 @@ def main() -> None:
             options["start"] = validate_start(start)
         else:
             options["period"] = period
-        downloaded = yf.download(**options)
-        if downloaded.empty:
-            raise RuntimeError(f"No data returned for {ticker}")
+        downloaded = None
+        last_error = None
+        for attempt in range(1, 4):
+            try:
+                downloaded = yf.download(**options)
+                if downloaded is not None and not downloaded.empty:
+                    break
+                last_error = RuntimeError(f"No data returned for {ticker}")
+            except Exception as error:
+                last_error = error
+            if attempt < 3:
+                wait_seconds = 2 ** (attempt - 1)
+                print(f"{ticker}: download failed; retrying in {wait_seconds}s...")
+                time.sleep(wait_seconds)
+        if downloaded is None or downloaded.empty:
+            raise RuntimeError(
+                f"Unable to download yfinance data for {ticker} after 3 attempts"
+            ) from last_error
         destination.parent.mkdir(parents=True, exist_ok=True)
         downloaded.tail(bars).to_csv(destination)
         print(f"{ticker}: {len(downloaded.tail(bars))} rows -> {destination}")

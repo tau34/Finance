@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -19,10 +20,10 @@ def run(command: list[str]) -> None:
 
 def prompt_action() -> str:
     while True:
-        value = input("Enter action (train / predict): ").strip().lower()
-        if value in ("train", "predict"):
+        value = input("Enter action (train / predict / simulate): ").strip().lower()
+        if value in ("train", "predict", "simulate"):
             return value
-        print("Invalid action. Enter train or predict.")
+        print("Invalid action. Enter train, predict, or simulate.")
 
 
 def prompt_prediction_time() -> str:
@@ -64,11 +65,23 @@ def prediction_output_path(directory: Path, label: str) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run a model set from model_set.json.")
-    parser.add_argument("action", nargs="?", choices=("train", "predict"))
+    parser.add_argument("action", nargs="?", choices=("train", "predict", "simulate"))
     parser.add_argument("--config", help="Model-set directory or path to model_set.json")
+    parser.add_argument("--symbol", help="Prediction symbol or all")
+    parser.add_argument("--prediction-time", "--as-of", help="latest or an offset such as 1d")
+    parser.add_argument("--scope", choices=("common", "individual", "both"), help="Model scope")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing trained models")
+    parser.add_argument("--fee-rate", type=float, default=0.0005)
+    parser.add_argument("--slippage-rate", type=float, default=0.0005)
     args = parser.parse_args()
     action = args.action or prompt_action()
-    config, set_dir = load_config(args.config or prompt_config_path())
+    while True:
+        try:
+            config, set_dir = load_config(args.config or prompt_config_path())
+            break
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as error:
+            print(f"Invalid model-set: {error}")
+            args.config = prompt_config_path()
     project_dir = Path(__file__).resolve().parent
     models_dir = set_dir / "models"
     if action == "train":
@@ -77,19 +90,46 @@ def main() -> None:
         if missing:
             raise FileNotFoundError("Missing CSV files: " + ", ".join(map(str, missing)))
         models_dir.mkdir(parents=True, exist_ok=True)
+        selected_scope = args.scope or config["scope"]
         command = [
             sys.executable, str(project_dir / "forecasting.py"),
-            "--data", *map(str, paths), "--scope", config["scope"],
+            "--data", *map(str, paths), "--scope", selected_scope,
             "--model", config["model"], "--output-dir", str(models_dir),
             "--feature-intervals", *config["data"]["feature_intervals"],
             "--report", str(set_dir / "evaluation.json"),
             "--evaluation-csv", str(set_dir / "evaluation.csv"),
         ]
+        if args.overwrite:
+            command.append("--overwrite")
         run(command)
         return
-    prediction_time = prompt_prediction_time()
-    prediction_symbols = prompt_prediction_symbols(config["symbols"])
-    scopes = [config["scope"]] if config["scope"] != "both" else ["common", "individual"]
+    if action == "simulate":
+        output = set_dir / "equity.csv"
+        scope = args.scope or config["scope"]
+        run([
+            sys.executable, str(project_dir / "simulation.py"),
+            "--model-set", str(set_dir),
+            "--scope", scope,
+            "--fee-rate", str(args.fee_rate),
+            "--slippage-rate", str(args.slippage_rate),
+            "--output", str(output),
+        ])
+        return
+    prediction_time = args.prediction_time or prompt_prediction_time()
+    if prediction_time.lower() != "latest" and not re.fullmatch(r"\d+[mhdw]", prediction_time.lower()):
+        raise ValueError("Invalid --prediction-time. Use latest or an offset such as 1d")
+    if args.symbol:
+        tickers = [s["ticker"] if isinstance(s, dict) else s for s in config["symbols"]]
+        if args.symbol.lower() == "all":
+            prediction_symbols = tickers
+        elif args.symbol in tickers:
+            prediction_symbols = [args.symbol]
+        else:
+            raise ValueError(f"Invalid --symbol. Choose one of {tickers} or all")
+    else:
+        prediction_symbols = prompt_prediction_symbols(config["symbols"])
+    selected_scope = args.scope or config["scope"]
+    scopes = [selected_scope] if selected_scope != "both" else ["common", "individual"]
     output_path = prediction_output_path(
         set_dir / "predictions",
         "all" if len(prediction_symbols) > 1 else prediction_symbols[0],

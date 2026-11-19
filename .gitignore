@@ -4,3 +4,7 @@ __pycache__/
 *.pyd
 
 .venv
+
+# GitHub Actions generated runtime files
+model_sets/*/predictions/
+model_sets/*/equity.csv

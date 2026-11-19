@@ -464,6 +464,27 @@ predict結果はJSON配列として保存されます。`run_model_set.py`経由
 ウォークフォワード形式です。ただし、モデル自体は学習済みモデルをそのまま使うため、
 学習期間とシミュレーション期間が重なる場合は結果が過大評価される可能性があります。
 
+## GitHub Actionsでの実行
+
+`.github/workflows/finance.yml`は手動実行用のworkflow_dispatchを提供します。
+GitHubリポジトリの`Actions`から`Finance model workflow`を選択し、次の入力を指定します。
+
+| 入力 | 値 |
+|---|---|
+| `action` | `download`、`train`、`predict`、`simulate`、`all` |
+| `config` | モデルセットのディレクトリ、例:`model_sets/default` |
+| `start` | データ取得開始日、例:`2026-04-01`。空欄は各時間足の既定期間 |
+| `symbol` | 予測銘柄または`all` |
+| `prediction_time` | `latest`または`1d`、`3h`など |
+| `scope` | `common`、`individual`、`both` |
+| `overwrite` | 学習時に既存joblibを上書きするか |
+
+GitHub Actionsでは対話入力を使用しません。入力値は既存スクリプトのコマンドライン引数へ
+変換されます。`all`アクションは、download、train、predict、simulateを順番に実行します。
+
+実行後は`finance-results-<run_id>`という名前のArtifactから、CSV、joblib、evaluation、
+prediction JSON、equity CSVをダウンロードできます。Artifactは既定で30日間保持します。
+
 ## データ形式
 
 `yf.download(...).to_csv(...)` で保存したyfinanceの3行ヘッダーCSVを入力にします。
