@@ -1,0 +1,50 @@
+{
+  "name": "default",
+  "scope": "both",
+  "model": "lightgbm",
+  "data": {
+    "interval": "5m",
+    "bars": 10000,
+    "directory": "data",
+    "feature_intervals": [
+      "5m", "1h", "3h"
+    ]
+  },
+  "symbols": [
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "market": "unknown"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "market": "unknown"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "market": "unknown"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "market": "unknown"
+    },
+    {
+      "ticker": "6758.T",
+      "name": "Sony",
+      "market": "unknown"
+    },
+    {
+      "ticker": "8306.T",
+      "name": "Mitsubishi UFJ FG",
+      "market": "unknown"
+    },
+    {
+      "ticker": "2802.T",
+      "name": "Ajinomoto",
+      "market": "unknown"
+    }
+  ]
+}

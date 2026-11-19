@@ -1,0 +1,383 @@
+{
+  "scope": "both",
+  "model": "lightgbm",
+  "feature_intervals": [
+    "5m",
+    "1h",
+    "3h"
+  ],
+  "horizons": {
+    "30m": {
+      "common": {
+        "rows": 63078,
+        "train_rows": 50462,
+        "test_rows": 12616,
+        "return_mae": 0.00455968723201092,
+        "return_rmse": 0.006785075888132819,
+        "direction_accuracy": 0.44403931515535827
+      },
+      "individual": {
+        "BTC-JPY": {
+          "rows": 4508,
+          "train_rows": 3606,
+          "test_rows": 902,
+          "return_mae": 0.0032922344545883134,
+          "return_rmse": 0.004899094588962007,
+          "direction_accuracy": 0.42017738359201773
+        },
+        "ETH-JPY": {
+          "rows": 4447,
+          "train_rows": 3557,
+          "test_rows": 890,
+          "return_mae": 0.003978593718300311,
+          "return_rmse": 0.005935545971479022,
+          "direction_accuracy": 0.44157303370786516
+        },
+        "SOL-JPY": {
+          "rows": 4482,
+          "train_rows": 3585,
+          "test_rows": 897,
+          "return_mae": 0.004834468379781782,
+          "return_rmse": 0.00697300172551716,
+          "direction_accuracy": 0.41025641025641024
+        },
+        "XRP-JPY": {
+          "rows": 4603,
+          "train_rows": 3682,
+          "test_rows": 921,
+          "return_mae": 0.00478795616013199,
+          "return_rmse": 0.006813327194056591,
+          "direction_accuracy": 0.495114006514658
+        },
+        "ADA-JPY": {
+          "rows": 4486,
+          "train_rows": 3588,
+          "test_rows": 898,
+          "return_mae": 0.004570163927556231,
+          "return_rmse": 0.006595950247194354,
+          "direction_accuracy": 0.4298440979955457
+        },
+        "DOT-JPY": {
+          "rows": 4400,
+          "train_rows": 3520,
+          "test_rows": 880,
+          "return_mae": 0.005177815776715253,
+          "return_rmse": 0.007725630348861703,
+          "direction_accuracy": 0.48409090909090907
+        },
+        "DOGE-JPY": {
+          "rows": 4414,
+          "train_rows": 3531,
+          "test_rows": 883,
+          "return_mae": 0.004898646422130044,
+          "return_rmse": 0.007381948023976534,
+          "direction_accuracy": 0.43714609286523215
+        },
+        "SHIB-JPY": {
+          "rows": 4510,
+          "train_rows": 3608,
+          "test_rows": 902,
+          "return_mae": 0.004002583471933767,
+          "return_rmse": 0.00606618305437473,
+          "direction_accuracy": 0.4113082039911308
+        },
+        "AVAX-JPY": {
+          "rows": 4495,
+          "train_rows": 3596,
+          "test_rows": 899,
+          "return_mae": 0.00591908448725141,
+          "return_rmse": 0.009012547891258577,
+          "direction_accuracy": 0.4582869855394883
+        },
+        "UNI7083-JPY": {
+          "rows": 4370,
+          "train_rows": 3496,
+          "test_rows": 874,
+          "return_mae": 0.008942763179019412,
+          "return_rmse": 0.01176633216436018,
+          "direction_accuracy": 0.4462242562929062
+        },
+        "LTC-JPY": {
+          "rows": 4753,
+          "train_rows": 3802,
+          "test_rows": 951,
+          "return_mae": 0.004187584169394522,
+          "return_rmse": 0.0062219384828719115,
+          "direction_accuracy": 0.41324921135646686
+        },
+        "BCH-JPY": {
+          "rows": 4589,
+          "train_rows": 3671,
+          "test_rows": 918,
+          "return_mae": 0.004481120442099818,
+          "return_rmse": 0.006572821494307159,
+          "direction_accuracy": 0.4357298474945534
+        },
+        "XLM-JPY": {
+          "rows": 4722,
+          "train_rows": 3777,
+          "test_rows": 945,
+          "return_mae": 0.005015322879802125,
+          "return_rmse": 0.007056620282741858,
+          "direction_accuracy": 0.4264550264550265
+        },
+        "ATOM-JPY": {
+          "rows": 4299,
+          "train_rows": 3439,
+          "test_rows": 860,
+          "return_mae": 0.004631326223379396,
+          "return_rmse": 0.006479152323014902,
+          "direction_accuracy": 0.44534883720930235
+        }
+      }
+    },
+    "1h": {
+      "common": {
+        "rows": 62997,
+        "train_rows": 50397,
+        "test_rows": 12600,
+        "return_mae": 0.006913684208303437,
+        "return_rmse": 0.010106518757807213,
+        "direction_accuracy": 0.4808730158730159
+      },
+      "individual": {
+        "BTC-JPY": {
+          "rows": 4502,
+          "train_rows": 3601,
+          "test_rows": 901,
+          "return_mae": 0.004881542020364952,
+          "return_rmse": 0.0070765809485713645,
+          "direction_accuracy": 0.4583795782463929
+        },
+        "ETH-JPY": {
+          "rows": 4441,
+          "train_rows": 3552,
+          "test_rows": 889,
+          "return_mae": 0.0059120388102412375,
+          "return_rmse": 0.008820808892760853,
+          "direction_accuracy": 0.43532058492688414
+        },
+        "SOL-JPY": {
+          "rows": 4476,
+          "train_rows": 3580,
+          "test_rows": 896,
+          "return_mae": 0.007360815017809973,
+          "return_rmse": 0.010233984099047294,
+          "direction_accuracy": 0.4330357142857143
+        },
+        "XRP-JPY": {
+          "rows": 4598,
+          "train_rows": 3678,
+          "test_rows": 920,
+          "return_mae": 0.007225746376744744,
+          "return_rmse": 0.01028987551515092,
+          "direction_accuracy": 0.4923913043478261
+        },
+        "ADA-JPY": {
+          "rows": 4480,
+          "train_rows": 3584,
+          "test_rows": 896,
+          "return_mae": 0.0071228227306121125,
+          "return_rmse": 0.010067436465150072,
+          "direction_accuracy": 0.45982142857142855
+        },
+        "DOT-JPY": {
+          "rows": 4394,
+          "train_rows": 3515,
+          "test_rows": 879,
+          "return_mae": 0.008443387067931603,
+          "return_rmse": 0.01212963195835901,
+          "direction_accuracy": 0.4664391353811149
+        },
+        "DOGE-JPY": {
+          "rows": 4408,
+          "train_rows": 3526,
+          "test_rows": 882,
+          "return_mae": 0.0071922416156444255,
+          "return_rmse": 0.010795810232833956,
+          "direction_accuracy": 0.46258503401360546
+        },
+        "SHIB-JPY": {
+          "rows": 4504,
+          "train_rows": 3603,
+          "test_rows": 901,
+          "return_mae": 0.005933691719177301,
+          "return_rmse": 0.008976791257917165,
+          "direction_accuracy": 0.4872364039955605
+        },
+        "AVAX-JPY": {
+          "rows": 4489,
+          "train_rows": 3591,
+          "test_rows": 898,
+          "return_mae": 0.009008111388933046,
+          "return_rmse": 0.01326731544315976,
+          "direction_accuracy": 0.5211581291759465
+        },
+        "UNI7083-JPY": {
+          "rows": 4365,
+          "train_rows": 3492,
+          "test_rows": 873,
+          "return_mae": 0.014119882193785004,
+          "return_rmse": 0.01843694108334294,
+          "direction_accuracy": 0.4329896907216495
+        },
+        "LTC-JPY": {
+          "rows": 4748,
+          "train_rows": 3798,
+          "test_rows": 950,
+          "return_mae": 0.006256893926660984,
+          "return_rmse": 0.00901757835321458,
+          "direction_accuracy": 0.4442105263157895
+        },
+        "BCH-JPY": {
+          "rows": 4583,
+          "train_rows": 3666,
+          "test_rows": 917,
+          "return_mae": 0.006749552928401558,
+          "return_rmse": 0.009542076377285772,
+          "direction_accuracy": 0.5070883315158125
+        },
+        "XLM-JPY": {
+          "rows": 4716,
+          "train_rows": 3772,
+          "test_rows": 944,
+          "return_mae": 0.007373624225540525,
+          "return_rmse": 0.009984646925175821,
+          "direction_accuracy": 0.4375
+        },
+        "ATOM-JPY": {
+          "rows": 4293,
+          "train_rows": 3434,
+          "test_rows": 859,
+          "return_mae": 0.006596249239304991,
+          "return_rmse": 0.009355196845886274,
+          "direction_accuracy": 0.459837019790454
+        }
+      }
+    },
+    "3h": {
+      "common": {
+        "rows": 62815,
+        "train_rows": 50252,
+        "test_rows": 12563,
+        "return_mae": 0.012821704132999101,
+        "return_rmse": 0.01852195243746387,
+        "direction_accuracy": 0.5134124014964578
+      },
+      "individual": {
+        "BTC-JPY": {
+          "rows": 4486,
+          "train_rows": 3588,
+          "test_rows": 898,
+          "return_mae": 0.008377363550421594,
+          "return_rmse": 0.011621636262119543,
+          "direction_accuracy": 0.4354120267260579
+        },
+        "ETH-JPY": {
+          "rows": 4427,
+          "train_rows": 3541,
+          "test_rows": 886,
+          "return_mae": 0.010531604563449167,
+          "return_rmse": 0.015791879609045656,
+          "direction_accuracy": 0.4751693002257336
+        },
+        "SOL-JPY": {
+          "rows": 4460,
+          "train_rows": 3568,
+          "test_rows": 892,
+          "return_mae": 0.012939358062139174,
+          "return_rmse": 0.017727593387158333,
+          "direction_accuracy": 0.48654708520179374
+        },
+        "XRP-JPY": {
+          "rows": 4585,
+          "train_rows": 3668,
+          "test_rows": 917,
+          "return_mae": 0.012166323209490779,
+          "return_rmse": 0.017877989285223786,
+          "direction_accuracy": 0.6303162486368593
+        },
+        "ADA-JPY": {
+          "rows": 4465,
+          "train_rows": 3572,
+          "test_rows": 893,
+          "return_mae": 0.013501677079773457,
+          "return_rmse": 0.019974276258580767,
+          "direction_accuracy": 0.48376259798432253
+        },
+        "DOT-JPY": {
+          "rows": 4380,
+          "train_rows": 3504,
+          "test_rows": 876,
+          "return_mae": 0.014466068976266334,
+          "return_rmse": 0.022552198395289873,
+          "direction_accuracy": 0.5182648401826484
+        },
+        "DOGE-JPY": {
+          "rows": 4392,
+          "train_rows": 3513,
+          "test_rows": 879,
+          "return_mae": 0.013209795905786583,
+          "return_rmse": 0.01936381652809051,
+          "direction_accuracy": 0.4141069397042093
+        },
+        "SHIB-JPY": {
+          "rows": 4497,
+          "train_rows": 3597,
+          "test_rows": 900,
+          "return_mae": 0.010732613187860637,
+          "return_rmse": 0.01634754957716966,
+          "direction_accuracy": 0.5566666666666666
+        },
+        "AVAX-JPY": {
+          "rows": 4477,
+          "train_rows": 3581,
+          "test_rows": 896,
+          "return_mae": 0.01682194642831344,
+          "return_rmse": 0.02460392136237844,
+          "direction_accuracy": 0.5334821428571429
+        },
+        "UNI7083-JPY": {
+          "rows": 4350,
+          "train_rows": 3480,
+          "test_rows": 870,
+          "return_mae": 0.02252917027565002,
+          "return_rmse": 0.0306397956491684,
+          "direction_accuracy": 0.4781609195402299
+        },
+        "LTC-JPY": {
+          "rows": 4732,
+          "train_rows": 3785,
+          "test_rows": 947,
+          "return_mae": 0.011075496093640535,
+          "return_rmse": 0.015377505085265386,
+          "direction_accuracy": 0.5607180570221753
+        },
+        "BCH-JPY": {
+          "rows": 4573,
+          "train_rows": 3658,
+          "test_rows": 915,
+          "return_mae": 0.0118035978063364,
+          "return_rmse": 0.01617378680742579,
+          "direction_accuracy": 0.49508196721311476
+        },
+        "XLM-JPY": {
+          "rows": 4703,
+          "train_rows": 3762,
+          "test_rows": 941,
+          "return_mae": 0.013089565419532642,
+          "return_rmse": 0.017488823169756366,
+          "direction_accuracy": 0.4729011689691817
+        },
+        "ATOM-JPY": {
+          "rows": 4288,
+          "train_rows": 3430,
+          "test_rows": 858,
+          "return_mae": 0.013669371030316436,
+          "return_rmse": 0.018159118064074286,
+          "direction_accuracy": 0.44638694638694637
+        }
+      }
+    }
+  }
+}

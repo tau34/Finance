@@ -1,0 +1,95 @@
+{
+  "name": "default",
+  "scope": "both",
+  "model": "lightgbm",
+  "data": {
+    "interval": "5m",
+    "bars": 10000,
+    "directory": "data",
+    "feature_intervals": [
+      "5m", "1h", "3h"
+    ]
+  },
+  "symbols": [
+    {
+      "ticker": "7974.T",
+      "name": "Nintendo",
+      "market": "unknown"
+    },
+    {
+      "ticker": "7203.T",
+      "name": "Toyota",
+      "market": "unknown"
+    },
+    {
+      "ticker": "6758.T",
+      "name": "Sony",
+      "market": "unknown"
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank G",
+      "market": "unknown"
+    },
+    {
+      "ticker": "8411.T",
+      "name": "Mizuho FG",
+      "market": "unknown"
+    },
+    {
+      "ticker": "8306.T",
+      "name": "Mitsubishi UFJ FG",
+      "market": "unknown"
+    },
+    {
+      "ticker": "8316.T",
+      "name": "Sumitomo Mitsui FG",
+      "market": "unknown"
+    },
+    {
+      "ticker": "2503.T",
+      "name": "Kirin Holdings",
+      "market": "unknown"
+    },
+    {
+      "ticker": "2802.T",
+      "name": "Ajinomoto",
+      "market": "unknown"
+    },
+    {
+      "ticker": "6503.T",
+      "name": "Mitsubishi Electric",
+      "market": "unknown"
+    },
+    {
+      "ticker": "7267.T",
+      "name": "Honda",
+      "market": "unknown"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "market": "unknown"
+    },
+    {
+      "ticker": "9432.T",
+      "name": "NTT",
+      "market": "unknown"
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "market": "unknown"
+    },
+    {
+      "ticker": "9843.T",
+      "name": "Nitori",
+      "market": "unknown"
+    },
+    {
+      "ticker": "4385.T",
+      "name": "M3",
+      "market": "unknown"
+    }
+  ]
+}

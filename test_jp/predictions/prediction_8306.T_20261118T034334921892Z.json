@@ -1,0 +1,46 @@
+[
+  {
+    "symbol": "8306.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.00031138273334482006,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.0005421678524299443,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.0013746071985838906,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "8306.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.0074890725833145315,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.007928762059419113,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T02:30:00+00:00",
+        "predicted_log_return": 0.024034271675010974,
+        "direction": "Long"
+      }
+    }
+  }
+]

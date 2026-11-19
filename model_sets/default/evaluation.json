@@ -1,0 +1,36 @@
+{
+  "scope": "common",
+  "model": "lightgbm",
+  "horizons": {
+    "30m": {
+      "common": {
+        "rows": 680,
+        "train_rows": 544,
+        "test_rows": 136,
+        "return_mae": 0.002370863690241205,
+        "return_rmse": 0.0032308506581255596,
+        "direction_accuracy": 0.3382352941176471
+      }
+    },
+    "1h": {
+      "common": {
+        "rows": 680,
+        "train_rows": 544,
+        "test_rows": 136,
+        "return_mae": 0.0036918324045472693,
+        "return_rmse": 0.004907863646402311,
+        "direction_accuracy": 0.4485294117647059
+      }
+    },
+    "3h": {
+      "common": {
+        "rows": 452,
+        "train_rows": 361,
+        "test_rows": 91,
+        "return_mae": 0.005829813394835561,
+        "return_rmse": 0.0077031878546337165,
+        "direction_accuracy": 0.43956043956043955
+      }
+    }
+  }
+}

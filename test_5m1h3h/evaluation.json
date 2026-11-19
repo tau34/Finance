@@ -1,0 +1,215 @@
+{
+  "scope": "both",
+  "model": "lightgbm",
+  "feature_intervals": [
+    "5m",
+    "1h",
+    "3h"
+  ],
+  "horizons": {
+    "30m": {
+      "common": {
+        "rows": 26124,
+        "train_rows": 20899,
+        "test_rows": 5225,
+        "return_mae": 0.006135280972855342,
+        "return_rmse": 0.016148524360056784,
+        "direction_accuracy": 0.4329186602870813
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 4048,
+          "train_rows": 3238,
+          "test_rows": 810,
+          "return_mae": 0.004437084391791641,
+          "return_rmse": 0.007175223425430806,
+          "direction_accuracy": 0.4024691358024691
+        },
+        "MSFT": {
+          "rows": 4047,
+          "train_rows": 3237,
+          "test_rows": 810,
+          "return_mae": 0.003860000534370923,
+          "return_rmse": 0.006580614800341492,
+          "direction_accuracy": 0.4074074074074074
+        },
+        "GOOGL": {
+          "rows": 4048,
+          "train_rows": 3238,
+          "test_rows": 810,
+          "return_mae": 0.005199193141341301,
+          "return_rmse": 0.013917322422248586,
+          "direction_accuracy": 0.445679012345679
+        },
+        "INTC": {
+          "rows": 4049,
+          "train_rows": 3239,
+          "test_rows": 810,
+          "return_mae": 0.012200315779387466,
+          "return_rmse": 0.03231269041809126,
+          "direction_accuracy": 0.42098765432098767
+        },
+        "6758.T": {
+          "rows": 3326,
+          "train_rows": 2660,
+          "test_rows": 666,
+          "return_mae": 0.006045702810018715,
+          "return_rmse": 0.011441350653581752,
+          "direction_accuracy": 0.4744744744744745
+        },
+        "8306.T": {
+          "rows": 3284,
+          "train_rows": 2627,
+          "test_rows": 657,
+          "return_mae": 0.00561225123876154,
+          "return_rmse": 0.00989227227506733,
+          "direction_accuracy": 0.3987823439878234
+        },
+        "2802.T": {
+          "rows": 3322,
+          "train_rows": 2657,
+          "test_rows": 665,
+          "return_mae": 0.006379346041882393,
+          "return_rmse": 0.013530582043802489,
+          "direction_accuracy": 0.4255639097744361
+        }
+      }
+    },
+    "1h": {
+      "common": {
+        "rows": 26082,
+        "train_rows": 20865,
+        "test_rows": 5217,
+        "return_mae": 0.009534394141223482,
+        "return_rmse": 0.022434822072779758,
+        "direction_accuracy": 0.4368410964155645
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 4042,
+          "train_rows": 3233,
+          "test_rows": 809,
+          "return_mae": 0.00678130802709657,
+          "return_rmse": 0.010478333201365101,
+          "direction_accuracy": 0.411619283065513
+        },
+        "MSFT": {
+          "rows": 4041,
+          "train_rows": 3232,
+          "test_rows": 809,
+          "return_mae": 0.006094175074390583,
+          "return_rmse": 0.009605933263927401,
+          "direction_accuracy": 0.39060568603213847
+        },
+        "GOOGL": {
+          "rows": 4042,
+          "train_rows": 3233,
+          "test_rows": 809,
+          "return_mae": 0.007884047177786103,
+          "return_rmse": 0.019520191192875194,
+          "direction_accuracy": 0.5030902348578492
+        },
+        "INTC": {
+          "rows": 4043,
+          "train_rows": 3234,
+          "test_rows": 809,
+          "return_mae": 0.020485764635317812,
+          "return_rmse": 0.045174997535506266,
+          "direction_accuracy": 0.4437577255871446
+        },
+        "6758.T": {
+          "rows": 3320,
+          "train_rows": 2656,
+          "test_rows": 664,
+          "return_mae": 0.008784830809560338,
+          "return_rmse": 0.014539923372582935,
+          "direction_accuracy": 0.4743975903614458
+        },
+        "8306.T": {
+          "rows": 3278,
+          "train_rows": 2622,
+          "test_rows": 656,
+          "return_mae": 0.008644005419724142,
+          "return_rmse": 0.014255739362027899,
+          "direction_accuracy": 0.4557926829268293
+        },
+        "2802.T": {
+          "rows": 3316,
+          "train_rows": 2652,
+          "test_rows": 664,
+          "return_mae": 0.010154003496842822,
+          "return_rmse": 0.01925766964237342,
+          "direction_accuracy": 0.4578313253012048
+        }
+      }
+    },
+    "3h": {
+      "common": {
+        "rows": 25914,
+        "train_rows": 20731,
+        "test_rows": 5183,
+        "return_mae": 0.02043709126331968,
+        "return_rmse": 0.04025679798884719,
+        "direction_accuracy": 0.5081998842369284
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 4018,
+          "train_rows": 3214,
+          "test_rows": 804,
+          "return_mae": 0.014863016300264788,
+          "return_rmse": 0.019301979421162397,
+          "direction_accuracy": 0.39054726368159204
+        },
+        "MSFT": {
+          "rows": 4017,
+          "train_rows": 3213,
+          "test_rows": 804,
+          "return_mae": 0.010748626337972102,
+          "return_rmse": 0.015558589965676467,
+          "direction_accuracy": 0.5062189054726368
+        },
+        "GOOGL": {
+          "rows": 4018,
+          "train_rows": 3214,
+          "test_rows": 804,
+          "return_mae": 0.01660078012439443,
+          "return_rmse": 0.030858153643987207,
+          "direction_accuracy": 0.47388059701492535
+        },
+        "INTC": {
+          "rows": 4019,
+          "train_rows": 3215,
+          "test_rows": 804,
+          "return_mae": 0.044539945606575614,
+          "return_rmse": 0.0799156154541916,
+          "direction_accuracy": 0.376865671641791
+        },
+        "6758.T": {
+          "rows": 3296,
+          "train_rows": 2636,
+          "test_rows": 660,
+          "return_mae": 0.01368922484219071,
+          "return_rmse": 0.020598991861083712,
+          "direction_accuracy": 0.5136363636363637
+        },
+        "8306.T": {
+          "rows": 3254,
+          "train_rows": 2603,
+          "test_rows": 651,
+          "return_mae": 0.01916339986881272,
+          "return_rmse": 0.025907064288394635,
+          "direction_accuracy": 0.5299539170506913
+        },
+        "2802.T": {
+          "rows": 3292,
+          "train_rows": 2633,
+          "test_rows": 659,
+          "return_mae": 0.02164080522772136,
+          "return_rmse": 0.03468343594896869,
+          "direction_accuracy": 0.4597875569044006
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,618 @@
+[
+  {
+    "symbol": "BTC-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -2.9163355043461097e-05,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00010591622903591134,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0015408497650420169,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "ETH-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": 0.00017864997190214494,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": 0.0007749618711172561,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": 0.0018666881744836717,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "SOL-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00014729021810110256,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -1.6308300977230857e-05,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.001148901857021121,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "XRP-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00044407698391411295,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0008102480343201801,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0015394594790856563,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "ADA-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00044407698391411295,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0007519154418808114,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0013843566252875964,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "DOT-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 9.649292505707052e-05,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00019888483185027443,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.001257264307907599,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "DOGE-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00044407698391411295,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0009603049870508443,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0017233998463041262,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "SHIB-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0002411015341333003,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0005549509344121117,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0015408497650420169,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "AVAX-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -9.068916031566496e-05,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0004596763115431862,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.002336565184994145,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "UNI7083-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0001678559557483283,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -6.188684665935306e-05,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -2.8280050306125426e-05,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "LTC-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00044407698391411295,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.000736776543008368,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0017233998463041262,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "BCH-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00019918606789690626,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0009604383304450874,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0013160012848893233,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "XLM-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00037374076995220736,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0007444792775590469,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.001558195178677995,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "ATOM-JPY",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0005466884828404665,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0009158702733543428,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0019468580405004592,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "BTC-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0005415651586816922,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0013084215929653478,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0006027709107810882,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "ETH-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": -3.0756146456196124e-05,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": 0.00033940757177189373,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:50:00+00:00",
+        "predicted_log_return": -0.00045053642842951926,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "SOL-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00207901777626702,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0009014789722589417,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00290943701610283,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "XRP-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0002742692731326849,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0011004136003478367,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.001782657668890958,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "ADA-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0005342145434544135,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.000820782068537791,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00553389189544631,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "DOT-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0005745983817900129,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00017124227993086747,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.004213428545781516,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "DOGE-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0005274473212018946,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00030971709880415517,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0013515670018995458,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "SHIB-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00011214285635587594,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0007808939824956709,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00032599499104869376,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "AVAX-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.00010891002584576246,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 7.97472330786454e-05,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.001536195931585415,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "UNI7083-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0013287414347698816,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.007747520871913034,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.008682183099144324,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "LTC-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0007913069225246195,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0003716381403271325,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.002330321585820761,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "BCH-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.00020114085114946036,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0010530377519763058,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.003032800731509083,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "XLM-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 6.179583867907958e-05,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0002573435297490264,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": -0.0061196715839455925,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "ATOM-JPY",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0005644651045454014,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0015208484092477496,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-17T07:55:00+00:00",
+        "predicted_log_return": 0.0011673050537066298,
+        "direction": "Long"
+      }
+    }
+  }
+]

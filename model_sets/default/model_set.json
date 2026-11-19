@@ -1,0 +1,25 @@
+{
+  "name": "default",
+  "scope": "common",
+  "model": "lightgbm",
+  "data": {
+    "interval": "5m",
+    "bars": 10000,
+    "directory": "data",
+    "feature_intervals": [
+      "1h"
+    ]
+  },
+  "symbols": [
+    {
+      "ticker": "AAPL",
+      "name": "AAPL",
+      "market": "unknown"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MSFT",
+      "market": "unknown"
+    }
+  ]
+}

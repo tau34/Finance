@@ -1,0 +1,66 @@
+{
+  "scope": "both",
+  "model": "lightgbm",
+  "horizons": {
+    "30m": {
+      "common": {
+        "rows": 118,
+        "train_rows": 94,
+        "test_rows": 24,
+        "return_mae": 0.0027482035819878466,
+        "return_rmse": 0.0035275335643635943,
+        "direction_accuracy": 0.4166666666666667
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 118,
+          "train_rows": 94,
+          "test_rows": 24,
+          "return_mae": 0.0027482035819878466,
+          "return_rmse": 0.0035275335643635943,
+          "direction_accuracy": 0.4166666666666667
+        }
+      }
+    },
+    "1h": {
+      "common": {
+        "rows": 118,
+        "train_rows": 94,
+        "test_rows": 24,
+        "return_mae": 0.003879172103305978,
+        "return_rmse": 0.004707971071430676,
+        "direction_accuracy": 0.5416666666666666
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 118,
+          "train_rows": 94,
+          "test_rows": 24,
+          "return_mae": 0.003879172103305978,
+          "return_rmse": 0.004707971071430676,
+          "direction_accuracy": 0.5416666666666666
+        }
+      }
+    },
+    "3h": {
+      "common": {
+        "rows": 78,
+        "train_rows": 62,
+        "test_rows": 16,
+        "return_mae": 0.0059526025784999576,
+        "return_rmse": 0.006682667060617833,
+        "direction_accuracy": 0.5625
+      },
+      "individual": {
+        "AAPL": {
+          "rows": 78,
+          "train_rows": 62,
+          "test_rows": 16,
+          "return_mae": 0.0059526025784999576,
+          "return_rmse": 0.006682667060617833,
+          "direction_accuracy": 0.5625
+        }
+      }
+    }
+  }
+}

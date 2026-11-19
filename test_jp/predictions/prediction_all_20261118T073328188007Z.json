@@ -1,0 +1,706 @@
+[
+  {
+    "symbol": "7974.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0022527620928327534,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0006996531791242654,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0021290887354486997,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "7203.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.002817897155769552,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.000189249211034033,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0004938152513004975,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "6758.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0005084495377077691,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0002880661342158727,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0011863151086632282,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9984.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.033249861155009906,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.017786413368247798,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.026595545491336043,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "8411.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0053095095478656,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0002501856041001798,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0007921700191914261,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "8306.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0023407596738842895,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0027819403563665245,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.009756454906834168,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "8316.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.006129859139837487,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.001045896531279673,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.011894114374007506,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "2503.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0035773861265470234,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0035912449621888494,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.009110568945523983,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "2802.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0039014186837225827,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.001298095932335545,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.00030476493359391795,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "6503.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.004017907718697376,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.002117008599265293,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.003278746829766385,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "7267.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0004480583440101264,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0015629850069395206,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.001484291610922395,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "7751.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.00018679258938434837,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0002770424943191094,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0078717995040978,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9432.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0010735917546791877,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0014487630915307045,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0013597823354792558,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9433.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0035092412116384465,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0024667048531656502,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.007905095427827366,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9843.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.009950022093358322,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0014616720234259342,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.015361798833592864,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "4385.T",
+    "scope": "common",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.02156624375481706,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.015328886903573072,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.02113767278637451,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "7974.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.00308177571665769,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.003060651222620006,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.004547345509802593,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "7203.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.001824980625367609,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 2.3929415635076165e-05,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0031691042736629676,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "6758.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0029577896838983396,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0020325325239927937,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.006678637217776287,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "9984.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.01701554647753615,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.012390350285695899,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.03737793664455569,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "8411.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.012091488368726967,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.004040230202881061,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.00585746849127255,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "8306.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.013354448219452171,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0156949668525261,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.014175861175655788,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "8316.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.01657650516146694,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.016572109577222174,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.014796981144775108,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "2503.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.002866122784733212,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0032680498098034637,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.003471884867997713,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "2802.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.001569924106321932,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.01095103026124966,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.003437329516234517,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "6503.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0007248786401880392,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0019594946191558837,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.003754770104085127,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "7267.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.005854186076428236,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.003587361121746837,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.004583995052916035,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "7751.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.008402817820299516,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0073287630896541,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.01696941541658354,
+        "direction": "Short"
+      }
+    }
+  },
+  {
+    "symbol": "9432.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.005055170278862243,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.00396644955967462,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.007638661898024941,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9433.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.004021439914029456,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.004816358471587982,
+        "direction": "Long"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.00227986778371818,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "9843.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.0017360229444012725,
+        "direction": "Short"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.004956874990109063,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": 0.010651010421726868,
+        "direction": "Long"
+      }
+    }
+  },
+  {
+    "symbol": "4385.T",
+    "scope": "individual",
+    "prediction_reference": "latest",
+    "forecasts": {
+      "30m": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.004038578741999373,
+        "direction": "Long"
+      },
+      "1h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.0012399959726659435,
+        "direction": "Short"
+      },
+      "3h": {
+        "timestamp": "2026-11-18T06:20:00+00:00",
+        "predicted_log_return": -0.01814743934483855,
+        "direction": "Short"
+      }
+    }
+  }
+]

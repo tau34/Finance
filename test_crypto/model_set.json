@@ -1,0 +1,83 @@
+{
+  "name": "default",
+  "scope": "both",
+  "model": "lightgbm",
+  "data": {
+    "interval": "5m",
+    "bars": 10000,
+    "directory": "data",
+    "feature_intervals": ["5m", "1h", "3h"]
+  },
+  "symbols": [
+    {
+      "ticker": "BTC-JPY",
+      "name": "Bitcoin",
+      "market": "unknown"
+    },
+    {
+      "ticker": "ETH-JPY",
+      "name": "Ethereum",
+      "market": "unknown"
+    },
+    {
+      "ticker": "SOL-JPY",
+      "name": "Solana",
+      "market": "unknown"
+    },
+    {
+      "ticker": "XRP-JPY",
+      "name": "Ripple",
+      "market": "unknown"
+    },
+    {
+      "ticker": "ADA-JPY",
+      "name": "Cardano",
+      "market": "unknown"
+    },
+    {
+      "ticker": "DOT-JPY",
+      "name": "Polkadot",
+      "market": "unknown"
+    },
+    {
+      "ticker": "DOGE-JPY",
+      "name": "Dogecoin",
+      "market": "unknown"
+    },
+    {
+      "ticker": "SHIB-JPY",
+      "name": "Shiba Inu",
+      "market": "unknown"
+    },
+    {
+      "ticker": "AVAX-JPY",
+      "name": "Avalanche",
+      "market": "unknown"
+    },
+    {
+      "ticker": "UNI7083-JPY",
+      "name": "Uniswap",
+      "market": "unknown"
+    },
+    {
+      "ticker": "LTC-JPY",
+      "name": "Litecoin",
+      "market": "unknown"
+    },
+    {
+      "ticker": "BCH-JPY",
+      "name": "Bitcoin Cash",
+      "market": "unknown"
+    },
+    {
+      "ticker": "XLM-JPY",
+      "name": "Stellar",
+      "market": "unknown"
+    },
+    {
+      "ticker": "ATOM-JPY",
+      "name": "Cosmos",
+      "market": "unknown"
+    }
+  ]
+}
