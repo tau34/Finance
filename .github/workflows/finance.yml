@@ -1,6 +1,10 @@
 name: Finance model workflow
 
 on:
+
+  schedule:
+    - cron: '*/5 * * * *'
+
   workflow_dispatch:
     inputs:
       action:
@@ -17,7 +21,7 @@ on:
       config:
         description: "Model-set directory"
         required: true
-        default: "model_sets/default"
+        default: "model_sets/crypto"
       start:
         description: "Download start date (for example 2026-04-01)"
         required: false
@@ -52,6 +56,17 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    concurrency:
+      group: finance-model-workflow
+      cancel-in-progress: true
+    env:
+      FINANCE_ACTION: ${{ github.event_name == 'schedule' && 'predict' || inputs.action }}
+      FINANCE_CONFIG: ${{ github.event_name == 'schedule' && 'model_sets/crypto' || inputs.config }}
+      FINANCE_START: ${{ github.event_name == 'schedule' && '' || inputs.start }}
+      FINANCE_SYMBOL: ${{ github.event_name == 'schedule' && 'all' || inputs.symbol }}
+      FINANCE_PREDICTION_TIME: ${{ github.event_name == 'schedule' && 'latest' || inputs.prediction_time }}
+      FINANCE_SCOPE: ${{ github.event_name == 'schedule' && 'both' || inputs.scope }}
+      FINANCE_OVERWRITE: ${{ github.event_name == 'schedule' && 'false' || inputs.overwrite }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -66,41 +81,41 @@ jobs:
         run: python -m pip install --upgrade pip -r requirements.txt
 
       - name: Download data
-        if: inputs.action == 'download' || inputs.action == 'all'
+        if: env.FINANCE_ACTION == 'download' || env.FINANCE_ACTION == 'all'
         run: |
-          if [ -n "${{ inputs.start }}" ]; then
-            python download_yfinance.py --config "${{ inputs.config }}" --start "${{ inputs.start }}"
+          if [ -n "${{ env.FINANCE_START }}" ]; then
+            python download_yfinance.py --config "${{ env.FINANCE_CONFIG }}" --start "${{ env.FINANCE_START }}"
           else
-            python download_yfinance.py --config "${{ inputs.config }}"
+            python download_yfinance.py --config "${{ env.FINANCE_CONFIG }}"
           fi
 
       - name: Train models
-        if: inputs.action == 'train' || inputs.action == 'all'
+        if: env.FINANCE_ACTION == 'train' || env.FINANCE_ACTION == 'all'
         run: |
-          if [ "${{ inputs.overwrite }}" = "true" ]; then
-            python run_model_set.py train --config "${{ inputs.config }}" --scope "${{ inputs.scope }}" --overwrite
+          if [ "${{ env.FINANCE_OVERWRITE }}" = "true" ]; then
+            python run_model_set.py train --config "${{ env.FINANCE_CONFIG }}" --scope "${{ env.FINANCE_SCOPE }}" --overwrite
           else
-            python run_model_set.py train --config "${{ inputs.config }}" --scope "${{ inputs.scope }}"
+            python run_model_set.py train --config "${{ env.FINANCE_CONFIG }}" --scope "${{ env.FINANCE_SCOPE }}"
           fi
 
       - name: Predict
-        if: inputs.action == 'predict' || inputs.action == 'all'
+        if: env.FINANCE_ACTION == 'predict' || env.FINANCE_ACTION == 'all'
         run: |
           python run_model_set.py predict \
-            --config "${{ inputs.config }}" \
-            --symbol "${{ inputs.symbol }}" \
-            --prediction-time "${{ inputs.prediction_time }}" \
-            --scope "${{ inputs.scope }}"
+            --config "${{ env.FINANCE_CONFIG }}" \
+            --symbol "${{ env.FINANCE_SYMBOL }}" \
+            --prediction-time "${{ env.FINANCE_PREDICTION_TIME }}" \
+            --scope "${{ env.FINANCE_SCOPE }}"
 
       - name: Simulate trades
-        if: inputs.action == 'simulate' || inputs.action == 'all'
+        if: env.FINANCE_ACTION == 'simulate' || env.FINANCE_ACTION == 'all'
         run: |
           python run_model_set.py simulate \
-            --config "${{ inputs.config }}" \
-            --scope "${{ inputs.scope }}"
+            --config "${{ env.FINANCE_CONFIG }}" \
+            --scope "${{ env.FINANCE_SCOPE }}"
 
       - name: Upload finance results
-        if: always()
+        if: github.event_name != 'schedule' && always()
         uses: actions/upload-artifact@v4
         with:
           name: finance-results-${{ github.run_id }}

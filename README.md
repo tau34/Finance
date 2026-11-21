@@ -479,6 +479,26 @@ GitHubリポジトリの`Actions`から`Finance model workflow`を選択し、�
 | `scope` | `common`、`individual`、`both` |
 | `overwrite` | 学習時に既存joblibを上書きするか |
 
+workflow_dispatchの既定値は次のとおりです。
+
+- `action`: `predict`
+- `config`: `model_sets/crypto`
+- `symbol`: `all`
+- `prediction_time`: `latest`
+- `scope`: `both`
+
+定期実行は毎5分（UTC）をスケジュールしますが、GitHub Actionsの負荷により実行時刻が
+遅れる場合があります。定期実行では、手動入力に関係なく次の値で予測します。
+
+- `action`: `predict`
+- `config`: `model_sets/crypto`
+- `symbol`: `all`
+- `prediction_time`: `latest`
+- `scope`: `both`
+
+定期実行ではArtifactをアップロードしません。手動実行時のみprediction JSONなどを
+`finance-results-<run_id>`として保存します。
+
 GitHub Actionsでは対話入力を使用しません。入力値は既存スクリプトのコマンドライン引数へ
 変換されます。`all`アクションは、download、train、predict、simulateを順番に実行します。
 
